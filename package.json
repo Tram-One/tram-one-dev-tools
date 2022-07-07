@@ -5,7 +5,9 @@
   "source": "src/index.html",
   "scripts": {
     "build:icon": "svgexport ./icon/icon_svgexport.json",
-    "build:zip": "cp -r extension dist zip -r tram-one-dev-tools.zip dist && rm -rf dist"
+    "prebuild:zip": "rm -rf *.zip && rm -rf tram-one-dev-tools",
+    "build:zip": "mkdir tram-one-dev-tools && cp -r extension/* tram-one-dev-tools && zip tram-one-dev-tools.zip tram-one-dev-tools/*",
+    "postbuild:zip": "rm -rf tram-one-dev-tools"
   },
   "dependencies": {
     "@tram-one/tram-logo": "^4.1.0",
