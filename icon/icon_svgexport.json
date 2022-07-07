@@ -1,0 +1,12 @@
+[
+  {
+    "input": ["../node_modules/@tram-one/tram-logo/logo.svg"],
+    "output": [
+      ["../extension/icon16.png", "pad", "16:16"],
+      ["../extension/icon32.png", "pad", "32:32"],
+      ["../extension/icon48.png", "pad", "48:48"],
+      ["../extension/icon128.png", "pad", "128:128"],
+      ["../extension/icon512.png", "pad", "512:512"]
+    ]
+  }
+]
